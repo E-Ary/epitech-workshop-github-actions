@@ -1,0 +1,18 @@
+name: Exo4
+on: workflow_dispatch
+jobs:
+  alpine:
+    runs-on: ubuntu-latest
+    container: alpine
+    steps:
+      - run: os-release VERSION=
+  centos:
+    runs-on: ubuntu-latest
+    container: centos
+    steps:
+      - run: os-release VERSION=
+  fedora:
+    runs-on: ubuntu-latest
+    container: fedora
+    steps:
+      - run: os-release VERSION=
