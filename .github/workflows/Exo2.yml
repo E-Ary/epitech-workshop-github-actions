@@ -5,6 +5,7 @@ on:
   gollum:
   pull_request:
     types: [ready_for_review]
+  workflow_dispatch:
   schedule:
     - cron : '0 0 1 * *'
 jobs:
