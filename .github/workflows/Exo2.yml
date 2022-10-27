@@ -1,4 +1,4 @@
-name: Ex2
+name: Exo2
 on: 
   issues:
     types: [opened, edited, closed]
@@ -8,6 +8,7 @@ on:
   schedule:
     - cron : '0 0 1 * *'
 jobs:
-  runs-on: ubuntu-latest
-  steps:
-    - run: echo "Hello, world! Today is ";date +"%d-%m-%Y %H-%M-%S"
+  Exo2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, world! Today is ";date +"%d-%m-%Y %H-%M-%S"
