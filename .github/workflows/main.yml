@@ -1,1 +1,7 @@
-echo "Hello, World!"
+name: pouet
+on: [push]
+jobs:
+  pouet:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, World!"
