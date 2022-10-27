@@ -5,14 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     container: alpine
     steps:
-      - run: os-release VERSION=
+      - run: cat /etc/os-release | grep VERSION=
   centos:
     runs-on: ubuntu-latest
     container: centos
     steps:
-      - run: os-release VERSION=
+      - run: cat /etc/os-release | grep VERSION=
   fedora:
     runs-on: ubuntu-latest
     container: fedora
     steps:
-      - run: os-release VERSION=
+      - run: cat /etc/os-release | grep VERSION=
