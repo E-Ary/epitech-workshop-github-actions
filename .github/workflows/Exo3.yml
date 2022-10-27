@@ -1,0 +1,16 @@
+name: Exo3
+on: 
+  workflow_dispatch:
+jobs:
+  Exo3_Ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - run: lsb_release -v
+  Exo3_Windows:
+    runs-on: windows-latest
+    steps:
+      - run: Get-ComputerInfo -Property "WindowsCurrentVersion"
+  Exo3_MacOs:
+    runs-on: macos-latest
+    steps:
+      - run: sw_vers -productVersion
