@@ -5,7 +5,7 @@ jobs:
   Exo3_Ubuntu:
     runs-on: ubuntu-latest
     steps:
-      - run: lsb_release -v
+      - run: lsb_release -d
   Exo3_Windows:
     runs-on: windows-latest
     steps:
