@@ -12,4 +12,4 @@ jobs:
   Exo2:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello, world! Today is ";date +"%d-%m-%Y %H-%M-%S"
+      - run: echo -n "Hello, world! Today is ";date +"%d-%m-%Y %H-%M-%S"
